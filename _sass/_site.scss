@@ -76,9 +76,9 @@ body {
 .header-small {
   text-align: left;
   margin-bottom: .75rem;
-  font-size: .75rem;
+  font-size: 1rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: lowercase;
 
   a {
     color: $base-color;
@@ -377,4 +377,30 @@ body {
       margin: 4px;
     }
   }
+}
+
+/*--------------
+  404
+  --------------*/
+.four-oh-four {
+	height: 20rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	#message-span {
+		font-size: 3rem;
+		&.typewriter {
+			padding-right: .25rem;
+			border-right: .10rem solid #442200;
+			animation: 
+				blink-caret .75s step-end infinite;
+		}
+
+		/* The typewriter cursor effect */
+		@keyframes blink-caret {
+			from, to { border-color: transparent }
+			50% { border-color: orange; }
+		}
+	}
 }
